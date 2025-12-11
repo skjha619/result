@@ -1,4 +1,4 @@
-FROM node:latest-slim
+FROM node:24-slim
 
 # add curl for healthcheck
 RUN apt-get update && \
