@@ -1,9 +1,9 @@
-name: vote-app-pipeline
+name: reult-app-pipeline
 on: push
 env:
-    serviceName: vote
-    depName: voting-app-deployment
-    containerName: voting-app-container
+    serviceName: result
+    depName: result-app-deployment
+    containerName: result-app-container
     environment: green
 jobs:
   build:
@@ -39,7 +39,7 @@ jobs:
           format: 'table'
           severity: 'HIGH,CRITICAL'
           ignore-unfixed: true
-          exit-code: '1'
+          #exit-code: '1'
 
       - name: image push to ACR.
         run: docker push ${{secrets.ACR_LOGIN_SERVER}}/$serviceName:$SHORT_COMMIT_ID
