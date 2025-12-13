@@ -4,7 +4,7 @@ env:
     serviceName: result
     depName: result-app-deployment
     containerName: result-app-container
-    environment: blue
+    environment: green
 jobs:
   build:
     runs-on: ubuntu-latest
