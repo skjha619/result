@@ -53,7 +53,7 @@ jobs:
           echo "$KUBE_CONFIG_DATA"|base64 --decode > $HOME/.kube/config
           chmod 600 $HOME/.kube/config
           
-      - name: updating image
+      - name:  updating image
         run: |
              kubectl set image deployment/$depName $containerName=${{secrets.ACR_LOGIN_SERVER}}/$serviceName:$SHORT_COMMIT_ID -n $environment
              kubectl rollout status deployment/$depName --timeout=120s -n $environment

@@ -103,6 +103,7 @@ body{
   width:100%;
   position:absolute;
 }
+
 #background-stats div{
   transition: width 400ms ease-in-out;
   display:inline-block;
