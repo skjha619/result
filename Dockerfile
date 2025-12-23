@@ -1,3 +1,4 @@
+#comment intentional
 FROM node:24-slim AS build
 RUN apt-get update && \
     apt-get install -y --no-install-recommends curl tini && \
