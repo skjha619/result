@@ -89,12 +89,12 @@ body{
 }
 
 #choice .choice.dogs{
-  color: #c8cb00;
+  color: #c8cb00 /*#cb00a9*/;
   float: right;
 }
 
 #choice .choice.cats{
-  color: #c8cb00;
+  color: #c8cb00 /*#cb00a9*/;
   float: left;
 }
 #background-stats{
